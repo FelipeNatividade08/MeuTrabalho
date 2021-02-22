@@ -9,20 +9,20 @@ import br.com.FelipeN.tabelaProdutos.modelo.Produto;
 
 public class ProdutoForm {
 	
-	@NotNull @NotEmpty @Length(min = 2)
+	@NotNull@Length(min = 2)
 	private String nomeProduto;
 	
-	@NotNull @NotEmpty
-	private float valor;
+	@NotNull
+	private Float valor;
 	
-	@NotNull @NotEmpty
+	@NotNull
 	private Long id;
 	
-	@NotNull @NotEmpty @Length(min = 2)
+	@NotNull@Length(min = 2)
 	private String Descricao;
 	
-	@NotNull @NotEmpty
-	private int estoque;
+	@NotNull
+	private Integer estoque;
 	
 	
 	public String getProduto() {
@@ -31,10 +31,10 @@ public class ProdutoForm {
 	public void setProduto(String produto) {
 		this.nomeProduto = produto;
 	}
-	public float getValor() {
+	public Float getValor() {
 		return valor;
 	}
-	public void setValor(float valor) {
+	public void setValor(Float valor) {
 		this.valor = valor;
 	}
 	public Long getId() {
@@ -49,10 +49,10 @@ public class ProdutoForm {
 	public void setDescricao(String descricao) {
 		Descricao = descricao;
 	}
-	public int getEstoque() {
+	public Integer getEstoque() {
 		return estoque;
 	}
-	public void setEstoque(int estoque) {
+	public void setEstoque(Integer estoque) {
 		this.estoque = estoque;
 	}
 	public Produto converter() {

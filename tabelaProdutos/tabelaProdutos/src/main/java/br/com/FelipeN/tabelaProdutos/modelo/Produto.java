@@ -13,10 +13,10 @@ public class Produto {
 	private Long id;
 	private String nomeProduto;
 	private String Descricao;
-	private float valor;
+	private Float valor;
 	
 	//@ManyToOne
-	private int estoque;
+	private Integer estoque;
 	
 	public Produto() {
 		
@@ -32,10 +32,10 @@ public class Produto {
 	}
 
 
-	public int getEstoque() {
+	public Integer getEstoque() {
 		return estoque;
 	}
-	public void setEstoque(int estoque) {
+	public void setEstoque(Integer estoque) {
 		this.estoque = estoque;
 	}
 	public Long getId() {
@@ -50,10 +50,10 @@ public class Produto {
 	public void setDescricao(String descricao) {
 		Descricao = descricao;
 	}
-	public float getValor() {
+	public Float getValor() {
 		return valor;
 	}
-	public void setValor(float valor) {
+	public void setValor(Float valor) {
 		this.valor = valor;
 	}
 	public String getNomeProduto() {

@@ -9,25 +9,25 @@ import br.com.FelipeN.tabelaProdutos.repository.ProdutoRepository;
 
 public class AtualizacaoProdutoForm {
 	
-	@NotNull @NotEmpty
-	private int estoque;
+	@NotNull
+	private Integer estoque;
 	
-	@NotNull @NotEmpty
-	private float valor;
+	@NotNull
+	private Float valor;
 
-	public int getEstoque() {
+	public Integer getEstoque() {
 		return estoque;
 	}
 
-	public void setEstoque(int estoque) {
+	public void setEstoque(Integer estoque) {
 		this.estoque = estoque;
 	}
 
-	public float getValor() {
+	public Float getValor() {
 		return valor;
 	}
 
-	public void setValor(float valor) {
+	public void setValor(Float valor) {
 		this.valor = valor;
 	}
 	
